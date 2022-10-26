@@ -1,0 +1,6 @@
+mount /dev/zvol/silverpelt/nightheart /silverpelt/nightheart/
+chown -Rv mongodb /silverpelt/nightheart/mongodb/
+systemctl restart mongod
+pm2 kill
+cd ~/
+/usr/bin/smhelper.py
