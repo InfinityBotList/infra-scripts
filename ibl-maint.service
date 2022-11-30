@@ -1,0 +1,20 @@
+Description="Maint service"
+After=network.target
+StartLimitIntervalSec==0
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/uvicorn test:app --port 1292
+User=root
+Group=root
+RuntimeDirectory=/root
+WorkingDirectory=/root
+ExecReload=/bin/kill -s HUP $MAINPID
+KillMode=mixed
+TimeoutStopSec=5
+PrivateTmp=true
+RestartSec=1
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
