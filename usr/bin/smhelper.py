@@ -28,8 +28,8 @@ ns = "Infinity"
 
 start("InfinityBotList", "/root/InfinityBotList/MainSite", "npm -- start")
 start("ManagerBot", "/root/InfinityBotList/InfinityManager", "npm -- start")
-start("PopplioV1", "/root/Popplio", "process.json", watch=False)
-start("PopplioV2", "/root/Popplio-V2", "process.json", watch=False)
+start("PopplioLegacy", "/root/Popplio", "process.json", watch=False)
+start("Popplio", "/root/Popplio-V2", "process.json", watch=False)
 start("Artemis", "/root/Artemis", "process.json", watch=False)
 start("ArcadiaBot", "/root/arcadia/bot", "process.json", watch=False)
 start("ArcadiaAPI", "/root/arcadia/api", "process.json", watch=False)
@@ -41,6 +41,7 @@ start("GithubIBL", "/root/InfinityBotList/GithubBot", "npm -- start")
 start("AppSiteIBL", "/root/InfinityBotList/AppsSite", "npm -- start")
 start("IBLTicket", "/root/InfinityBotList/TicektBot", "npm -- start")
 start("BaseProxy", "/root/proxysid", "process.json", watch=False)
+start("TSWeb", "/root/ts-webhook-adapter", "process.json", watch=False)
 
 ns = "DisWidgets"
 
