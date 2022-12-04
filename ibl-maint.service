@@ -1,10 +1,9 @@
-Description="Maint service"
-After=network.target
-StartLimitIntervalSec==0
-
 [Service]
 Type=simple
-ExecStart=/usr/local/bin/uvicorn test:app --port 1292
+Description="Maint service"
+After=network.target
+StartLimitIntervalSec=0
+ExecStart=/root/void/void
 User=root
 Group=root
 RuntimeDirectory=/root
