@@ -1,0 +1,22 @@
+[Service]
+Type=simple
+Description="IBL V3"
+After=popplio-v1.service
+StartLimitIntervalSec=0
+ExecStart=/usr/bin/npm start
+User=root
+Group=root
+RuntimeDirectory=/root/InfinityBotList/MainSite/
+WorkingDirectory=/root/InfinityBotList/MainSite/
+ExecReload=/bin/kill -s HUP $MAINPID
+KillMode=mixed
+TimeoutStopSec=5
+PrivateTmp=true
+RestartSec=1
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+
+[Unit]
+PartOf=ibl.target

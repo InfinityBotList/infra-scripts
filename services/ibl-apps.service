@@ -1,13 +1,13 @@
 [Service]
 Type=simple
-Description="Popplio [v3]"
-After=ibl-maint.service
+Description="IBL Apps Site"
+After=popplio-v1.service
 StartLimitIntervalSec=0
-ExecStart=/root/Popplio/popplio
+ExecStart=/usr/bin/npm start
 User=root
 Group=root
-RuntimeDirectory=/root/Popplio
-WorkingDirectory=/root/Popplio
+RuntimeDirectory=/root/InfinityBotList/AppsSite/
+WorkingDirectory=/root/InfinityBotList/AppsSite
 ExecReload=/bin/kill -s HUP $MAINPID
 KillMode=mixed
 TimeoutStopSec=5
@@ -17,3 +17,6 @@ Restart=always
 
 [Install]
 WantedBy=multi-user.target
+
+[Unit]
+PartOf=ibl.target

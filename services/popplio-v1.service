@@ -1,13 +1,13 @@
 [Service]
 Type=simple
-Description="Popplio [v4]"
+Description="Popplio [v3]"
 After=ibl-maint.service
 StartLimitIntervalSec=0
-ExecStart=/root/Popplio-V2/popplio
+ExecStart=/root/Popplio/popplio
 User=root
 Group=root
-RuntimeDirectory=/root/Popplio-V2
-WorkingDirectory=/root/Popplio-V2
+RuntimeDirectory=/root/Popplio
+WorkingDirectory=/root/Popplio
 ExecReload=/bin/kill -s HUP $MAINPID
 KillMode=mixed
 TimeoutStopSec=5
@@ -17,3 +17,6 @@ Restart=always
 
 [Install]
 WantedBy=multi-user.target
+
+[Unit]
+PartOf=ibl.target
