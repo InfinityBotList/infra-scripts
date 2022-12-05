@@ -1,0 +1,20 @@
+[Service]
+Type=simple
+ExecStart=/usr/bin/npm start
+User=root
+Group=root
+WorkingDirectory=/root/ToxMod/BetaSite
+ExecReload=/bin/kill -s HUP $MAINPID
+KillMode=mixed
+TimeoutStopSec=5
+PrivateTmp=true
+RestartSec=1
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+
+[Unit]
+PartOf=toxmod.target
+After=network.target
+Description="ToxMod Beta Site"
