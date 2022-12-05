@@ -13,3 +13,4 @@ nginx:
 
 systemd:
 	$(foreach file, $(wildcard ./services/*), echo $(file) && ./addtosystemd.sh $(file);)
+	cd services; systemctl enable *

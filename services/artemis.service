@@ -1,13 +1,13 @@
 [Service]
 Type=simple
-Description="Maint service"
-After=zfsmongo.service
+Description="Artemis Short Links Service [v3+v4]"
+After=ibl-maint.service
 StartLimitIntervalSec=0
-ExecStart=/root/void/void
+ExecStart=/root/Artemis/shorts
 User=root
 Group=root
-RuntimeDirectory=/root
-WorkingDirectory=/root
+RuntimeDirectory=/root/Artemis
+WorkingDirectory=/root/Artemis
 ExecReload=/bin/kill -s HUP $MAINPID
 KillMode=mixed
 TimeoutStopSec=5
@@ -17,3 +17,6 @@ Restart=always
 
 [Install]
 WantedBy=multi-user.target
+
+[Unit]
+PartOf=ibl.target
