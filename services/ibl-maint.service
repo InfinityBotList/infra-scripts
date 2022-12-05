@@ -1,6 +1,5 @@
 [Service]
 Type=simple
-StartLimitIntervalSec=0
 ExecStart=/root/void/void
 User=root
 Group=root

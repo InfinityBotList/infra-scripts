@@ -1,6 +1,5 @@
 [Service]
 Type=simple
-StartLimitIntervalSec=0
 ExecStart=/usr/bin/make run
 User=root
 Group=root

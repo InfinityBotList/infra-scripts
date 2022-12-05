@@ -1,6 +1,5 @@
 [Service]
 Type=simple
-StartLimitIntervalSec=0
 ExecStart=/root/ts-webhook-adapter/ts-webhook-adapter
 User=root
 Group=root

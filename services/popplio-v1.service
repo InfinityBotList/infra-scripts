@@ -1,6 +1,5 @@
 [Service]
 Type=simple
-StartLimitIntervalSec=0
 ExecStart=/root/Popplio/popplio
 User=root
 Group=root

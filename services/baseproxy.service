@@ -1,6 +1,5 @@
 [Service]
 Type=simple
-StartLimitIntervalSec=0
 ExecStart=/root/proxysid/nirn-run
 User=root
 Group=root
