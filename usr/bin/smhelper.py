@@ -26,19 +26,11 @@ if len(sys.argv) == 1:
 
 ns = "Infinity"
 
-start("InfinityBotList", "/root/InfinityBotList/MainSite", "npm -- start")
-start("ManagerBot", "/root/InfinityBotList/InfinityManager", "npm -- start")
-start("PopplioLegacy", "/root/Popplio", "process.json", watch=False)
-start("Popplio", "/root/Popplio-V2", "process.json", watch=False)
-start("Artemis", "/root/Artemis", "process.json", watch=False)
-start("ArcadiaBot", "/root/arcadia/bot", "process.json", watch=False)
-start("ArcadiaAPI", "/root/arcadia/api", "process.json", watch=False)
 start("TicketPanelServer", "/root/InfinityBotList/TicketPanel/server", "npm -- start")
 start("TicketPanelTranscripts", "/root/InfinityBotList/TicketPanel/transcripts", "npm -- start")
 start("Reedwhisker", "/root/InfinityBotList/Infinity-Next", "npm -- start")
 start("BlogSiteIBL", "/root/InfinityBotList/BlogSite", "yarn -- serve")
 start("GithubIBL", "/root/InfinityBotList/GithubBot", "npm -- start")
-start("AppSiteIBL", "/root/InfinityBotList/AppsSite", "npm -- start")
 start("IBLTicket", "/root/InfinityBotList/TicektBot", "npm -- start")
 start("BaseProxy", "/root/proxysid", "process.json", watch=False)
 start("TSWeb", "/root/ts-webhook-adapter", "process.json", watch=False)
