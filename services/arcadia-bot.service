@@ -1,10 +1,10 @@
 [Service]
 Type=simple
 StartLimitIntervalSec=0
-ExecStart=/usr/bin/npm start
+ExecStart=/usr/bin/make run
 User=root
 Group=root
-WorkingDirectory=/root/InfinityBotList/AppsSite
+WorkingDirectory=/root/arcadia/bot
 ExecReload=/bin/kill -s HUP $MAINPID
 KillMode=mixed
 TimeoutStopSec=5
@@ -17,5 +17,5 @@ WantedBy=multi-user.target
 
 [Unit]
 PartOf=ibl.target
-Description="IBL Apps Site"
-After=popplio-v1.service
+Description="Arcadia Bot [v4]"
+After=ibl-maint.service

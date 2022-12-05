@@ -1,12 +1,9 @@
 [Service]
 Type=simple
-Description="IBL Manager Bot [v3, legacy]"
-After=popplio-v1.service
 StartLimitIntervalSec=0
 ExecStart=/usr/bin/npm start
 User=root
 Group=root
-RuntimeDirectory=/root/InfinityBotList/InfinityManager/
 WorkingDirectory=/root/InfinityBotList/InfinityManager/
 ExecReload=/bin/kill -s HUP $MAINPID
 KillMode=mixed
@@ -20,3 +17,5 @@ WantedBy=multi-user.target
 
 [Unit]
 PartOf=ibl.target
+Description="IBL Manager Bot [v3, legacy]"
+After=popplio-v1.service

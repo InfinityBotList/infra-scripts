@@ -5,7 +5,6 @@ After=network.target
 ExecStart=/bin/bash -c 'mount /dev/zvol/silverpelt/nightheart /silverpelt/nightheart/; chown -Rv mongodb /silverpelt/nightheart/mongodb/; systemctl restart mongod'
 User=root
 Group=root
-RuntimeDirectory=/root
 WorkingDirectory=/root
 
 [Install]

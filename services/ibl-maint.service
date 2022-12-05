@@ -1,12 +1,9 @@
 [Service]
 Type=simple
-Description="Maint service"
-After=zfsmongo.service
 StartLimitIntervalSec=0
 ExecStart=/root/void/void
 User=root
 Group=root
-RuntimeDirectory=/root
 WorkingDirectory=/root
 ExecReload=/bin/kill -s HUP $MAINPID
 KillMode=mixed
@@ -17,3 +14,7 @@ Restart=always
 
 [Install]
 WantedBy=multi-user.target
+
+[Unit]
+Description="Maint service"
+After=zfsmongo.service

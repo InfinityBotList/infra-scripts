@@ -1,12 +1,9 @@
 [Service]
 Type=simple
-Description="Popplio [v3]"
-After=ibl-maint.service
 StartLimitIntervalSec=0
 ExecStart=/root/Popplio/popplio
 User=root
 Group=root
-RuntimeDirectory=/root/Popplio
 WorkingDirectory=/root/Popplio
 ExecReload=/bin/kill -s HUP $MAINPID
 KillMode=mixed
@@ -20,3 +17,5 @@ WantedBy=multi-user.target
 
 [Unit]
 PartOf=ibl.target
+Description="Popplio [v3]"
+After=ibl-maint.service
