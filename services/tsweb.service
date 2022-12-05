@@ -1,0 +1,21 @@
+[Service]
+Type=simple
+StartLimitIntervalSec=0
+ExecStart=/root/ts-webhook-adapter/ts-webhook-adapter
+User=root
+Group=root
+WorkingDirectory=/root/ts-webhook-adapter
+ExecReload=/bin/kill -s HUP $MAINPID
+KillMode=mixed
+TimeoutStopSec=5
+PrivateTmp=true
+RestartSec=1
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
+
+[Unit]
+PartOf=ibl.target
+Description="IBL Endpoint Security - Tailscale Logs"
+After=network.target
