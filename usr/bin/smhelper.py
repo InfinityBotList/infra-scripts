@@ -28,12 +28,9 @@ ns = "Infinity"
 
 start("TicketPanelServer", "/root/InfinityBotList/TicketPanel/server", "npm -- start")
 start("TicketPanelTranscripts", "/root/InfinityBotList/TicketPanel/transcripts", "npm -- start")
-start("Reedwhisker", "/root/InfinityBotList/Infinity-Next", "npm -- start")
 start("BlogSiteIBL", "/root/InfinityBotList/BlogSite", "yarn -- serve")
 start("GithubIBL", "/root/InfinityBotList/GithubBot", "npm -- start")
 start("IBLTicket", "/root/InfinityBotList/TicektBot", "npm -- start")
-start("BaseProxy", "/root/proxysid", "process.json", watch=False)
-start("TSWeb", "/root/ts-webhook-adapter", "process.json", watch=False)
 
 ns = "DisWidgets"
 
@@ -44,11 +41,6 @@ ns = "ChillCord"
 
 start("CCWebsite", "/root/ChillCord/Website", "npm -- start")
 start("CCAPI", "/root/ChillCord/API", "npm -- start")
-
-ns = "ToxMod"
-
-start("ToxWeb", "/root/ToxMod/Website", "npm -- start")
-start("ToxAPI", "/root/ToxMod/API", "npm -- start")
 
 ns = "Skynet"
 
@@ -74,10 +66,6 @@ start("DscJobsAPI", "/root/DscJobsAPI", "npm -- start")
 ns = "DscJobs"
 
 start("DscJobsMod", "/root/DscJobsMod", "npm -- start")
-
-ns = "ToxModBeta"
-
-start("ToxModBeta", "/root/ToxMod/BetaSite", "yarn -- start")
 
 ns = "ReviewBots"
 
