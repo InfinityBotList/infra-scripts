@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # Ensure $1 is set
 if [ -z "$1" ]; then
     echo "Usage: log <service>"
