@@ -22,4 +22,6 @@ systemd:
 	@cp services/*.target tmp/services/ # Add targets 
 	@cp -vf tmp/services/* /etc/systemd/system/ || : # Copy to systemd
 	cd tmp/services; systemctl enable * || : # Enable all services
-	#rm -rf tmp
+	rm -rf tmp
+	cp -rf log.sh /usr/bin/log
+	systemctl daemon-reload
