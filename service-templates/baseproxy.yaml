@@ -1,0 +1,5 @@
+cmd: "/root/proxysid/nirn-run"
+dir: "/root/proxysid"
+target: ibl
+after: ibl-maint
+description: Core IBL Base Proxy [v3+v4]

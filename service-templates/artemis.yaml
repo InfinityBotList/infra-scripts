@@ -1,0 +1,5 @@
+cmd: "/root/Artemis/shorts"
+dir: "/root/Artemis"
+target: ibl
+after: ibl-maint
+description: Artemis Short Links Service [v3+v4]

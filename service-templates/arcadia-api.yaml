@@ -1,0 +1,5 @@
+cmd: "/usr/bin/make run"
+dir: "/root/arcadia/api"
+target: ibl
+after: ibl-maint
+description: Arcadia API [v4]

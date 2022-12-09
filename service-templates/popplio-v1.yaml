@@ -1,0 +1,5 @@
+cmd: "/root/Popplio/popplio"
+dir: "/root/Popplio"
+target: ibl
+after: ibl-maint
+description: Popplio [v3]

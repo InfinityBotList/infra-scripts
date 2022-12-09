@@ -1,0 +1,5 @@
+cmd: "/usr/bin/make run"
+dir: "/root/arcadia/bot"
+target: ibl
+after: ibl-maint
+description: Arcadia Bot [v4]
