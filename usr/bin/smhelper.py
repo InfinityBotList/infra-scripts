@@ -24,14 +24,6 @@ def start(name, path, bin, watch: bool = True):
 if len(sys.argv) == 1:
     os.system("pm2 kill")
 
-ns = "Infinity"
-
-start("TicketPanelServer", "/root/InfinityBotList/TicketPanel/server", "npm -- start")
-start("TicketPanelTranscripts", "/root/InfinityBotList/TicketPanel/transcripts", "npm -- start")
-start("BlogSiteIBL", "/root/InfinityBotList/BlogSite", "yarn -- serve")
-start("GithubIBL", "/root/InfinityBotList/GithubBot", "npm -- start")
-start("IBLTicket", "/root/InfinityBotList/TicektBot", "npm -- start")
-
 ns = "DisWidgets"
 
 start("DisWSite", "/root/DisWidgets/Website", "npm -- start")
