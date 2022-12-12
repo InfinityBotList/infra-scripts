@@ -10,3 +10,5 @@ targets:
     description: Artie
   - name: toxmod
     description: ToxMods
+  - name: reviewbots
+    description: Review Bots
