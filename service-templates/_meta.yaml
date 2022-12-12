@@ -1,0 +1,12 @@
+# Targets for the systemd services
+targets:
+  - name: ibl
+    description: Infinity Bot List
+  - name: github
+    description: GitHub Bots
+  - name: diswidgets
+    description: DisWidgets
+  - name: artie
+    description: Artie
+  - name: toxmod
+    description: ToxMods
