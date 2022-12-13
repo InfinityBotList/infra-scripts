@@ -12,3 +12,5 @@ targets:
     description: ToxMods
   - name: reviewbots
     description: Review Bots
+  - name: skynet
+    description: Skynet Bot
