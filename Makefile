@@ -20,6 +20,7 @@ systemd:
 	rm -rf tmp/services/service-templates
 	@cp -vf tmp/services/* /etc/systemd/system/ || : # Copy to systemd
 	cd tmp/services; systemctl enable * || : # Enable all services
+	cd tmp; git clone https://github.com/Infinitybotlist/iblcli; cd iblcli; go build -v; cp -vf ibl /usr/bin 
 	rm -rf tmp
 	cp -rf log.sh /usr/bin/log
 	mkdir -p /etc/ibl.d
