@@ -22,4 +22,6 @@ systemd:
 	cd tmp/services; systemctl enable * || : # Enable all services
 	rm -rf tmp
 	cp -rf log.sh /usr/bin/log
+	mkdir -p /etc/ibl.d
+	cp service-templates/_meta.yaml /etc/ibl.d/meta.yaml
 	systemctl daemon-reload
