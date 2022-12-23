@@ -26,3 +26,7 @@ systemd:
 	mkdir -p /etc/ibl.d
 	cp service-templates/_meta.yaml /etc/ibl.d/meta.yaml
 	systemctl daemon-reload
+
+copynginx:
+	rm -rf nginx
+	cp -rf /etc/nginx .
