@@ -1,0 +1,5 @@
+cmd: "/root/github-v2/webserver/webserver"
+dir: "/root/github-v2/webserver"
+target: github
+after: ibl-maint
+description: Github Bot Webserver [v2]

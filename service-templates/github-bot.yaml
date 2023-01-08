@@ -1,5 +1,5 @@
-cmd: "/usr/bin/npm start"
-dir: "/root/InfinityBotList/GithubBot"
+cmd: "/usr/bin/make run"
+dir: "/root/github-v2/bot"
 target: github
 after: ibl-maint
-description: Github Bot
+description: Github Bot [v2]

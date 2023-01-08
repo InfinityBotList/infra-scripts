@@ -1,5 +1,0 @@
-cmd: "/usr/bin/npm start"
-dir: "/root/DisWidgets/GitBot"
-target: github
-after: ibl-maint
-description: Github Bot
